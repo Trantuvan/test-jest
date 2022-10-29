@@ -25,3 +25,8 @@ test("the fetch fails with an error", async () => {
     expect(error).toMatch(/error/);
   }
 });
+
+test("the data is peanut butter combine with resolves", async () => {
+  //* resolves here of Jest
+  await expect(fetchData()).resolves.toBe("peanut butter");
+});
